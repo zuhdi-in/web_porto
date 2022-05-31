@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    color: #202020;
+}
+
+body {
+    background-color: #EBF3EC;
+}
+
+.wrap {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.logo {
+    width: 60px;
+}
+
+.mobile__menu {
+    background: url("/assets/images/hamburger.svg") no-repeat scroll center center / 100% auto rgba(0, 0, 0, 0);
+    height: 30px;
+    width: 30px;
+    margin: auto 0;
+}
+
+.navbar{
+    width: 80%;
+    display: none;
+    position: absolute;
+    background-color: #EBF3EC;
+    top: 100px  ;
+    padding: 2rem;
+    left: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+nav ul li {
+    margin: auto 0;
+}
+
+.nav__button {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #FFD369;
+    color: #202020;
+    padding: 12px 20px;
+    border: 0;
+    border-radius: 6px;
+}
+
+@media (min-width: 768px) {
+    .mobile__menu {
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+        position: static;
+        padding: 0;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+}
+@media (min-width: 992px) {}
